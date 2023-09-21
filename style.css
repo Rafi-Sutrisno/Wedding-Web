@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.container{
+    margin: 0;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+}
+
+.home{
+    width: 100%;
+}
+
+.home > .bg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home .banner{
+    width: 80%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.home .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home .gap{
+    height: 170px;
+}
+
+.float{
+    margin: 0 20px;
+    width: 93%;
+    height: 170px;
+    position:fixed;
+    top: 350px;
+}
+
+.nav-bar{
+    width: 100%;
+    height: fit-content;
+}
+
+.nav-bar > .main-nav{
+    margin-top: 10px;
+    height: 80px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.nav-bar > .sub-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.sub-nav .img{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* hero */
+
+.hero{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/* couple */
+
+.couple{
+    width: 100%;
+    height: 110vh;
+    border: 4px solid black;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.couple .content{
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.couple .zone{
+    background-color: aqua;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.couple .image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:cadetblue;
+    margin-bottom: 30px;
+}
+
+.couple .zone h3{
+    margin: 0;
+}
+
+/* jadwal */
+
+.jadwal{
+    width: 100%;
+    height: 110vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.jadwal .content{
+    display: flex;
+    background-color: aqua;
+    margin: 0 40px;
+    gap: 10px;
+}
+
+.jadwal .zone{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.jadwal .zone .date{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.jadwal .zone .adrress{
+    text-align: center;
+}
+
+.jadwal p{
+    margin: 0;
+}
+
+.jadwal .button{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    border-radius: 10px;
+}
+
+.jadwal a{
+    text-decoration: none;
+    color: black;
+}
+
+/* protokol */
+
+.protokol{
+    text-align: center;
+    background-color: aqua;
+    width: 100%;
+}
+
+.protokol .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: aquamarine;
+}
+
+.protokol .zone{
+    border-radius: 15px;
+    border: 3px solid black;
+    width: 255px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.protokol .zone .icon{
+    width: 70px;
+    height: 70px;
+    background-color: blueviolet;
+}
+
+/* kisah */
+
+.kisah{
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.kisah .content{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: chartreuse;
+    margin-top: 50px;
+}
+
+.kisah .content .zone{
+    background-color: lightskyblue;
+    border-radius: 40px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.kisah .zone .photo{
+    width: 100%;
+    height: 200px;
+    background-color: cadetblue;
+}
+
+.kisah .zone .title{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* gallery */
+.galery{
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+}
+
+.galery .photo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.galery .image{
+    background-color: blueviolet;
+    height: 200px;
+    border-radius: 30px;
+}
+
+
+
+
+
+body{
+    font-size: 110%
+}
