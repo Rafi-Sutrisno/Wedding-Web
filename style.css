@@ -1,18 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: 'Mooli', sans-serif;
     font-family: 'Caveat', cursive;
     font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
 }
-
+@font-face {
+    font-family: fontspring;
+    
+    src: url(Source/Fontspring-DEMO-theseasons-reg.otf);
+}
 .container{
     margin: 0;
     width: 100%;
-    background-color: bisque;
+    background-color: #6A0C0B;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20vh;
+    color: #B97D10;
 }
 
 .home{
@@ -27,12 +37,30 @@ body{
 }
 
 .home .banner{
-    width: 80%;
-    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    background-image: url(Gambar/banner-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home .gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #6A0C0B, 25%, #6a0d0b6a 36%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    color: #FBCA03;
+}
+
+.home h4, .home h1, .home h5{
+    margin: 5px;
+}
+
+.home h1{
+    font-size: 40px;
 }
 
 .home .title{
@@ -42,27 +70,38 @@ body{
 }
 
 .home .gap{
-    height: 170px;
+    height: 85px;
+}
+
+.parent{
+    position: relative;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .float{
-    margin: 0 20px;
+    /* margin: 0 20px; */
     width: 93%;
     height: 170px;
     position:fixed;
-    top: 350px;
+    bottom: 40px;
+    
 }
 
 .nav-bar{
     width: 100%;
     height: fit-content;
+    z-index: 9999;
 }
 
 .nav-bar > .main-nav{
     margin-top: 10px;
     height: 80px;
-    background-color: red;
-    border: 2px solid black;
+    background-color: #AA0505;
+    border: 2px solid #B97D10;
     border-radius: 20px;
 }
 
@@ -75,10 +114,67 @@ body{
     padding-right: 10px;
 }
 
+.main-nav a{
+    padding: 0 6%;
+    
+    margin: 0;
+    border-right: 5px solid #FBCA03;
+}
+
+.main-nav .no{
+    border-right: none;
+}
+
+.main-nav .ul-nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    width: 100%;
+}
+
+.main-nav .ul-nav li{
+    height: 100%;
+}
+
+.main-nav .icon{
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+
+.main-nav .n1{
+    background-image: url(Gambar/home.png)
+}
+
+.main-nav .n2{
+    background-image: url(Gambar/parents.png)
+}
+
+.main-nav .n3{
+    background-image: url(Gambar/calendar.png)
+}
+
+.main-nav .n4{
+    background-image: url(Gambar/clipboard.png)
+}
+
+.main-nav .n5{
+    background-image: url(Gambar/open-book.png)
+}
+
+.main-nav .n6{
+    background-image: url(Gambar/gallery.png)
+}
+
 .sub-nav .img{
     width: 40px;
     height: 40px;
-    background-color: red;
+    background-color: #AA0505;
+    border: 2px solid #B97D10;
     border-radius: 10px;
 }
 
@@ -89,7 +185,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 }
 
 /* couple */
@@ -97,37 +193,53 @@ body{
 .couple{
     width: 100%;
     height: 110vh;
-    border: 4px solid black;
+    border: 2px solid #FBCA03;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #FBCA03;
 }
 
 .couple .content{
-    margin-top: 30px;
+    margin-top: -30px;
     width: 100%;
     height: fit-content;
-    background-color: blueviolet;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
 .couple .zone{
-    background-color: aqua;
     width: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.couple .dan{
+    margin-top: 0;
+    
+}
+
 .couple .image{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color:cadetblue;
+    border: 2px solid #FBCA03;
     margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.ironman{
+    background-image: url(Gambar/ironman.jpg);
+    background-position: center;
+    
+}
+
+.pepper{
+    background-image: url(Gambar/pepper.webp);
 }
 
 .couple .zone h3{
@@ -139,22 +251,25 @@ body{
 .jadwal{
     width: 100%;
     height: 110vh;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 0px;
+}
+
+.jadwal h1{
+    color: #FBCA03;
+    margin: 0;
 }
 
 .jadwal .content{
     display: flex;
-    background-color: aqua;
     margin: 0 40px;
     gap: 10px;
 }
 
 .jadwal .zone{
-    background-color: blueviolet;
+    background-color: #FBCA03;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,6 +282,12 @@ body{
     display: flex;
     width: 90%;
     justify-content: space-between;
+}
+
+.jadwal .date .tgl, .jadwal .date .place{
+    font-weight:900;
+    font-size: 25px;
+    color: #6A0C0B;
 }
 
 .jadwal .zone .adrress{
@@ -183,7 +304,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightpink;
+    background-color: #AA0505;
     border-radius: 10px;
 }
 
@@ -192,12 +313,27 @@ body{
     color: black;
 }
 
+.jadwal .zone h3{
+    color: #6A0C0B;
+}
+
+.jadwal .segata{
+    font-family: segatha; 
+    font-size: 100px; 
+    font-weight:100;
+    margin: 0; 
+    transform: translateY(-30px);
+}
+
 /* protokol */
 
 .protokol{
     text-align: center;
-    background-color: aqua;
     width: 100%;
+}
+
+.protokol h1{
+    color: #FBCA03;
 }
 
 .protokol .content{
@@ -205,53 +341,63 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    background-color: aquamarine;
+    margin-top: -50px;
 }
 
 .protokol .zone{
+    color: #FBCA03;
     border-radius: 15px;
-    border: 3px solid black;
+    border: 3px solid #B97D10;
     width: 255px;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+    background-color: #AA0505;
 }
 
 .protokol .zone .icon{
     width: 70px;
     height: 70px;
-    background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
+    background-image: url(Gambar/iron.png);
 }
 
 /* kisah */
 
 .kisah{
     width: 100%;
-    background-color: blueviolet;
     text-align: center;
+    color: #B97D10;
+}
+
+.kisah h1{
+    color: #FBCA03;
 }
 
 .kisah .content{
     display: flex;
     justify-content: center;
     gap: 10px;
-    background-color: chartreuse;
-    margin-top: 50px;
+    margin-top: -40px;
 }
 
 .kisah .content .zone{
-    background-color: lightskyblue;
+    background-color: #FBCA03;
     border-radius: 40px;
     height: fit-content;
     overflow: hidden;
+    border: 3px solid #AA0505;
 }
 
 .kisah .zone .photo{
     width: 100%;
     height: 200px;
-    background-color: cadetblue;
+    background-color: #AA0505;
+    background-size: cover;
+    background-position: center;
 }
 
 .kisah .zone .title{
@@ -261,12 +407,26 @@ body{
     justify-content: space-between;
 }
 
+.kisah .p1{
+    background-image: url(Gambar/story1.jpg);
+}
+
+.kisah .p2{
+    background-image: url(Gambar/story2.avif);
+}
+
+.kisah .p3{
+    background-image: url(Gambar/story3.jpg);
+}
 
 /* gallery */
 .galery{
     width: 100%;
     text-align: center;
-    background-color: aqua;
+}
+
+.galery h1{
+    color: #FBCA03;
 }
 
 .galery .photo{
@@ -274,17 +434,72 @@ body{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     grid-template-rows: 1fr;
     gap: 10px;
+    margin-top: -80px;
 }
 
 .galery .image{
-    background-color: blueviolet;
+    background-color: #AA0505;
+    border: 2px solid #FBCA03;
     height: 200px;
     border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.galery .p1{
+    background-image: url(Gambar/banner-1.webp);
+}
+
+.galery .p2{
+    background-image: url(Gambar/banner-2.jpg);
+}
+
+.galery .p3{
+    background-image: url(Gambar/banner-3.jpg);
+}
+
+.galery .p4{
+    background-image: url(Gambar/story1.jpg);
+}
+
+.galery .p5{
+    background-image: url(Gambar/story2.avif);
+}
+
+.galery .p6{
+    background-image: url(Gambar/ironman.webp);
+}
+
+/*note*/
+.note{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    color: #AA0505;
+}
+
+.note .zone{
+    background-color: #FBCA03;
+    border: 2px solid #B97D10;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.note .zone:hover{
+    background-color: #B97D10;
 }
 
 
-
-
+/* footer */
+.footer{
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-bottom: 200px;
+}
 
 body{
     font-size: 110%

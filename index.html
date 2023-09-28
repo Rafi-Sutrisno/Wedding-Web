@@ -12,61 +12,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mooli&family=PT+Sans&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&family=Sen:wght@400;700&family=Titillium+Web:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Mooli&family=PT+Sans&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&family=Sen:wght@400;700&family=Titillium+Web:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=IBM+Plex+Mono:wght@300&family=Mooli&family=PT+Sans&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&family=Sen:wght@400;700&family=Titillium+Web:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/segatha" rel="stylesheet">
+
+    
 </head>
 <body>
     <div class="container">
-        <div class="home">
+        <div class="home" id="home">
             <div class="bg">
                 <div class="banner">
-                    <div class="title">
-                        <h4>The Wedding of</h4>
-                        <h1>Iron man and his wife</h1>
-                        <h5>Tommorow, 30 june 2024</h5>
-                    </div>
-                    <div class="gap">
-
+                    <div class="gradient">
+                        <div class="title">
+                            <h4 style="transform: translateY(150px); font-size: 20px;">The Wedding of</h4>
+                            <h1 style="transform: translateY(140px);">Iron man</h1>
+                            <p style="font-family: segatha; font-size: 100px; margin: 0; transform: translateY(65px);">and</p>
+                            <h1 style="">Pepper</h1>
+                            <h5>Tommorow, 30 june 2024</h5>
+                        </div>
+                        <div class="gap">
+    
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="float">
-            <div class="nav-bar">
-                <div class="sub-nav">
-                    <div class="img">
-
+        <div class="parent">
+            <div class="float">
+                <div class="nav-bar">
+                    <div class="sub-nav">
+                        <div class="img">
+    
+                        </div>
+                        <div class="img">
+    
+                        </div>
                     </div>
-                    <div class="img">
-
+                    <div class="main-nav">
+                        <ul class="ul-nav">
+                            <a href="#home"><li><div class="icon n1"></div></li></a>
+                            <a href="#couple"><li><div class="icon n2"></div></li></a>
+                            <a href="#jadwal"><li><div class="icon n3"></div></li></a>
+                            <a href="#protokol"><li><div class="icon n4"></div></li></a>
+                            <a href="#kisah"><li><div class="icon n5"></div></li></a>
+                            <a href="#galery" class="no"><li><div class="icon n6"></div></li></a>
+                        </ul>
                     </div>
-                </div>
-                <div class="main-nav">
-
                 </div>
             </div>
         </div>
 
         <div class="hero">
-            <div class="couple">
+            <div class="couple" id="couple">
                 <h1>We are Getting</h1>
-                <h1>Married</h1>
+                <div>
+                    <h1 style="font-family: segatha; font-size: 100px; font-weight:100;margin: 0; transform: translateY(-55px);">Married</h1>
+                </div>
                 <div class="content">
                     <div class="left zone">
-                        <div class="image">
+                        <div class="image ironman">
 
                         </div>
                         <h3>Iron man</h3>
                         <h3>lorem bom si</h3>
                     </div>
+                    <div class="dan">
+                        <h1 style="font-family: segatha; font-size: 100px; font-weight:100;">and</h1>
+                    </div>
                     <div class="right zone">
-                        <div class="image">
+                        <div class="image pepper">
 
                         </div>
                         <h3>His Wife</h3>
@@ -75,16 +93,17 @@
                 </div>
             </div>
 
-            <div class="jadwal">
-                <h1>Jadwal Acara</h1>
+            <div class="jadwal" id="jadwal">
+                <h1>Jadwal</h1>
+                <h1 class="segata">Acara</h1>
                 <div class="content">
                     <div class="left zone">
                         <h3>Akad Nikah</h3>
                         <div class="date">
-                            <div>
+                            <div class="tgl">
                                 29 june
                             </div>
-                            <div>
+                            <div class="place">
                                 Peta Park
                             </div>
                         </div>
@@ -99,12 +118,12 @@
                         </a>
                     </div>
                     <div class="right zone">
-                        <h3>Akad Nikah</h3>
+                        <h3>Resepsi Nikah</h3>
                         <div class="date">
-                            <div>
+                            <div class="tgl">
                                 29 june
                             </div>
-                            <div>
+                            <div class="place">
                                 Peta Park
                             </div>
                         </div>
@@ -120,8 +139,9 @@
                     </div>
                 </div>
             </div>
-            <div class="protokol">
-                <h1>Protokol Kesehatan</h1>
+            <div class="protokol" id="protokol">
+                <h1>Protokol</h1>
+                <h1 style="font-family: segatha; font-size: 100px; font-weight:100;margin: 0; transform: translateY(-55px);">Kesehatan</h1>
                 <div class="content">
                     <div class="zone">
                         <div class="icon">
@@ -154,11 +174,12 @@
                 </div>
             </div>
 
-            <div class="kisah">
-                <h1>Kisah Kami</h1>
+            <div class="kisah" id="kisah">
+                <h1>Kisah</h1>
+                <h1 style="font-family: segatha; font-size: 100px; font-weight: 100; margin: 0; transform: translateY(-65px);">Kami</h1>
                 <div class="content">
                     <div class="zone">
-                        <div class="photo">
+                        <div class="photo p1">
 
                         </div>
                         <div class="title">
@@ -170,7 +191,7 @@
                         </div>
                     </div>
                     <div class="zone">
-                        <div class="photo">
+                        <div class="photo p2">
 
                         </div>
                         <div class="title">
@@ -182,7 +203,7 @@
                         </div>
                     </div>
                     <div class="zone">
-                        <div class="photo">
+                        <div class="photo p3">
 
                         </div>
                         <div class="title">
@@ -195,32 +216,47 @@
                     </div>
                 </div>
             </div>
-            <div class="galery">
-                <h1>Gallery Kami</h1>
+            <div class="galery" id="galery">
+                <h1>Gallery</h1>
+                <h1 style="font-family: segatha; font-size: 90px; font-weight: 100; margin: 0; transform: translateY(-67px);">Kami</h1>
                 <div class="photo">
-                    <div class="image">
+                    <div class="image p1">
 
                     </div>
-                    <div class="image">
+                    <div class="image p2">
 
                     </div>
-                    <div class="image">
+                    <div class="image p3">
 
                     </div>
-                    <div class="image">
+                    <div class="image p4">
 
                     </div>
-                    <div class="image">
+                    <div class="image p5">
 
                     </div>
-                    <div class="image">
+                    <div class="image p6">
 
                     </div>
                 </div>
             </div>
+
+            <iframe width="95%" height="500px" src="https://www.youtube.com/embed/a34s27UfQTk"></iframe>
+            
             <div class="note">
-    
+                <div class="zone">
+                    <h4>LIVE STREAMING</h4>
+                </div>
+                <div class="zone">
+                    <h4>GOOGLE CALENDAR</h4>
+                </div>
             </div>
+
+            <div class="footer">
+                <p>Rafi Sutrisno</p>
+                28/9/2023
+            </div>
+
         </div>
     </div>
 </body>
